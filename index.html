@@ -2,43 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <a class="logo" href="#">My Logo</a>
-        
-            <nav class="menu_icon"><img src="images/Union.png"/></nav>
-                  
-    </header>
-    <section>
-        <div class="headline">
-            <main>
-                <h1>
-                     I’m May Pyone.
-                       Glad to see you!
-                </h1>
-                
-                <p>
-                    I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
-                </p>
-                <p class="connect">LET'S CONNECT</p>
-             <ul class="connect_menu">
-                <li><a href="#"><img src="images/twitter.png"/></a></li>
-                <li><a href="#"><img src="images/twitter.png"/></a></li>
-                <li><a href="#"><img src="images/M.png"></a></li>
-                <li><a href="#"><img src="images/git.png"></a></li>
-                <li><a href="#"><img src="images/fingers.svg"></a></li>
-             </ul>
-                        
-            </main>
-              
-        </div>
-        
-    </section>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>Fork Me! FCC: Test Suite Template</title>
+        <link rel="stylesheet" href="css/style.css">
+      </head>
     
+      <body>
+        <form>    
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+          <label id="name-label">Name</label><br>
+          <input required type="text" id="name" placeholder="Enter your name"><br>
+          <label id="email-label">Email</label><br>
+          <input required type="email" id="email" placeholder="Enter your email"><br>
+          <label id="number-label" >Age</label><br>
+          <input type="number" placeholder="Age" id="number" min="0" max="100" ><br>
+          <br/>
+          <div>Which option best describes your current role?</div>
+          <select name="option" id="option">
+            <optgroup label="Select your current role">
+                <option value="1">Student</option>
+                <option value="2">Full time job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer Not to Say</option>
+                <option value="4">Other</option>
+              </optgroup>
+            </select><br>
+
+          <div>Would you recommend freeCodeCamp to a friend?</div>
+          <input type="radio" value="radio1" id="radio1" name="radio" >
+          <label id="radio1">Definitely </label><br>
+          <input id="radio2" value="radio2" type="radio" name="radio" >
+          <label id="radio2"  >Maybe </label><br>
+          <input id="radio3" value="radio3" type="radio" name="radio" >
+          <label id="radio3"  >Not sure </label><br>
+          
+         <div>What is your favorite feature of freeCodeCamp?</div>
+         <select name="option" id="option">
+            <optgroup label="Select an option">
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+              </optgroup>
+            </select><br>
+
+        <div>What would you like to see improved? (Check all that apply)</div>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox"> Front-end Projects </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">Back-end Projects </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">Data Visualization </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">Challenges </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">Open Source Community </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">Gitter help rooms </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">Videos </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">City Meetups </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">Wiki </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">Forum </label><br>
+          <input type="checkbox" id="checkbox1" value="true" >
+          <label id="checkbox">Additional Courses </label><br>    
+        
+          <div>Any comments or suggestions?</div>
+          <textarea spaceholder="Enter your comment here.."> </textarea>
+          <br/>
+          <button id="submit" >Submit </button>
+        
+    </form>
+      </body>
+    </html>
 </body>
 </html>
